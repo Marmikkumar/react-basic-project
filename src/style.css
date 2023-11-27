@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Ephesis&family=Merriweather:ital,wght@0,300;0,400;0,700;1,900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&family=Poppins:wght@300;400;600&family=Roboto:wght@300;500;700;900&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+.Nav{
+    background-color: rgb(78, 76, 76);
+}
+
+.title{
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5vh 2vw;
+}
+
+.title h2{
+    font-family: Ephesis;
+    font-size: 2rem;
+    color: skyblue;
+}
+
+.option{
+    margin: auto;
+}
+
+.opt{
+    flex-direction: row;
+}
+
+.opt button{
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+    background-color: rgb(226, 57, 57);
+    color: white;
+    padding: 0.3rem;
+    border: none;
+    border-radius: 0.3rem;
+}
+
+.nav-inp{
+    border-radius: 0.2rem;
+    text-align: center;
+    width: 10vw;
+    height: 1.5rem;
+    border: 0.5px solid black;
+}
+
+/* --------------------------- Home -------------------- */
+
+.Home{
+    background: rgb(42, 41, 41);
+    min-height: 80vh;
+}
+
+.foodbox{
+    flex-direction: row;
+    width: 26vw;
+    height: 20vh;
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.foodimg{
+    width: 50%;    
+}
+
+.foodimg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.food-title{
+    padding: 0.5rem;
+    color: white;
+}
+
+.food-title button{
+    display: flex;
+    margin: auto;
+    padding: 0.2rem;
+    background-color: rgb(226, 57, 57);
+    color: white;
+    border: 0.5px;
+    border-radius: 0.2rem;
+}
+
+.container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem 1rem;
+    width: 90vw;
+    margin: auto;
+}
+
+.detail{
+    margin-bottom: 1.5rem ;
+    margin-left: 1.5rem;
+}
+
+@media screen and ( max-width: 1040px){
+    .foodbox{
+        width: 35vw;
+    }
+
+    .detail{
+        margin: auto;
+    }
+    
+}
+
+
+@media screen and ( max-width: 620px){
+    .Nav{
+        height: 30vh;
+    }
+
+    .title{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .title input{
+        width: 20vw;
+        margin: auto;
+    }
+
+    .container{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .detail{
+        margin: auto;
+    }
+
+    .foodbox{
+        width: 60vw;
+
+    }
+}
+
+
